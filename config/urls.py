@@ -18,8 +18,8 @@ from django.contrib import admin
 from django.urls import path
 from app.views import *
 urlpatterns = [
-    path("", home, "home.html"),
-    path("login/", loginPage, "login.html"),
-    path("register/", registerPage, "register.html"),
+    path("", home, name = "home.html"),
+    path("login/", loginPage, name = "login.html"),
+    path("register/", registerPage, name = "register.html"),
     path('admin/', admin.site.urls),
 ]
