@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href={% static "style.css" %}>
 </head>
 <body>
+    {% comment %} <nav>
+        <a href="{% url 'login' %}">Return Home</a>
+    </nav> {% endcomment %}
     <main>
         <h1>Home</h1>
         <p>Welcome to the home page</p>
