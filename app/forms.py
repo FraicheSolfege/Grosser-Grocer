@@ -17,4 +17,9 @@ class CreateUserForm(UserCreationForm):
 class LoginForm(forms.Form):
     username = forms.CharField(label='Username', max_length=100)
     password = forms.CharField(label='Password', max_length=100, widget=forms.PasswordInput)
-    
+
+
+def updateTeacher(new_name:str,old_name:str):
+    teacher = Teacher.objects.get(name=old_name)
+    teacher.name = new_name
+    teacher.save()

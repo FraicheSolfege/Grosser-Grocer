@@ -13,7 +13,56 @@ body{
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 } */
+
+/* ------------------ HOME ------------------  */
+.home_img{
+    width: 30%;
+    height: 30%;
+    display:flex;
+    
+}
+
+
+/* ------------------ NAVIGATION BAR------------------ */
+
+.navbar{
+    background-color: #74cfbf;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+/* ------------------ REGISTRATION PAGE ------------------  */
 .registerForm{
+    margin: 0 auto;
+    width: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #74cfbf;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+/* ---------------LOGIN PAGE ------------------ */
+.loginForm{
     margin: 0 auto;
     width: 350px;
     margin-top: auto;

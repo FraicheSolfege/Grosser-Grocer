@@ -5,7 +5,7 @@ from .models import *
 from .forms import *
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate
 # Create your views here.
 def home(request):
     context = {}
@@ -36,3 +36,5 @@ def login(request):
             return redirect('home')
         else:
             return HttpResponse('Invalid login')
+    context = {'form': form}
+    return render(request, 'login.html', context)
