@@ -8,12 +8,16 @@
     <link rel="stylesheet" href={% static "style.css" %}>
 </head>
 <body>
-    {% comment %} <nav>
-        <a href="{% url 'login' %}">Return Home</a>
-    </nav> {% endcomment %}
+    <nav class="navbar">
+        <a href="{% url 'login.html' %}">Return Home</a>
+    </nav>
     <main>
         <h1 class="home">Home</h1>
-        <img src={% static "thumbsup_expiration.png" %} alt="home" class="home_img">
+        <div class="home_test">
+            <h1>Grosser Grocer</h1>
+            <img src={% static "grosser_grocer.png" %} alt="home" class="grocer">
+            {% comment %} <img src={% static "thumbsup_expiration.png" %} alt="home" class="home_img"> {% endcomment %}
+        </div>
         {% block content %}
         {% endblock %}
     </main>

@@ -1,6 +1,12 @@
-body{
+/* body{
     background-color: #8db7e2;
     font-family: 'Roboto', sans-serif;
+} */
+
+body{
+    height: 100%;
+    background-color: rgb(102, 238, 207); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, rgb(113, 213, 247), rgb(51, 215, 163));
 }
 
 /* .registerForm{
@@ -16,11 +22,31 @@ body{
 
 /* ------------------ HOME ------------------  */
 .home_img{
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
     display:flex;
-    
+    justify-content: center;
+
 }
+
+.grocer{
+    height: 30%;
+    width: 30%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 20px solid black;
+    border-radius: 20px;
+
+}
+
+/* .home_test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} */
 
 
 /* ------------------ NAVIGATION BAR------------------ */
